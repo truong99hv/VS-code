@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự Án Web Tĩnh</title>
+
+    <link rel="shortcut icon" href="./img/logopage.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- overlay -->
+    <section id="overlay"></section>
+    <!-- Header -->
+    <header id="header">
+      <section class="container-fluid container-header-top">
+        <div class="container h-100">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-top row">
+                <div class="col-3">
+                  <div class="logo-page">
+                    <a href="index.html"
+                      ><img src="./img/logopage.png" alt="logo page"
+                    /></a>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="time">
+                    <p>
+                      <span><i class="fa-regular fa-clock me-1"></i></span>
+                      Giờ mở cửa: Từ 8:00 - 22:00 tất cả các ngày trong tuần
+                      (trừ ngày lễ, ngày Tết).
+                    </p>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <ul class="list-contact">
+                    <li>
+                      <a href="tel:0123456789" class="text-decoration-none"
+                        ><span><i class="fa-solid fa-phone"></i></span>
+                        0123456789</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:example@gmail.com"
+                        class="text-decoration-none"
+                        ><span><i class="fa-solid fa-envelope"></i></span>
+                        example@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-2">
+                  <button class="book">
+                    <a class="text-decoration-none" href="dat-lich.html"
+                      >ĐẶT LỊCH</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- dark -->
+
+      <!-- nav-bar -->
+
+      <div class="section" id="navbar-header">
+        <div class="container-fluid">
+          <div class="container">
+            <nav class="navbar">
+              <!-- logo -->
+              <div class="navbar__logo">
+                <img src="./img/logopage.png" alt="website logo" />
+              </div>
+              <!-- links -->
+              <ul class="navbar__links">
+                <li class="navbar__link"><a href="index.html">Trang chủ</a></li>
+                <li class="navbar__link">
+                  <a href="doinguchuyengia.html">Đội ngũ chuyên gia</a>
+                </li>
+                <li class="navbar__link">
+                  <a href="dich-vu.html">Các dịch vụ</a>
+                </li>
+                <li class="navbar__link">
+                  <a href="cacmautocdep.html">Các mẫu tóc đẹp</a>
+                </li>
+                <li class="navbar__link"><a href="lien-he.html">Liên hệ</a></li>
+                <li class="navbar__link">
+                  <a href="tuyen-dung.html">Tuyển Dụng</a>
+                </li>
+                <li class="navbar__link">
+                  <a href="thanh-vien.html">Đăng Nhập</a>
+                </li>
+              </ul>
+              <!-- menu button -->
+              <div class="navbar__icons">
+                <div class="navbar__icon"></div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Banner -->
+      <div class="banner container-fluid w-100">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./img/banner.jpg" />
+
+              <div class="container">
+                <div class="grid .row d-md-flex">
+                  <div class="col-md-6"></div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="grid-title .row">
+                      <h2 class="title">
+                        ĐÀN ÔNG TRƯỞNG THÀNH
+                        <br />
+                        CẦN MỘT MÁI TÓC ĐẸP
+                      </h2>
+
+                      <div class="text-grid">
+                        Bạn muốn được tôn trọng?
+                        <br />
+                        Hãy cắt một kiểu tóc thật nam tính. Quá là đơn giản phải
+                        không các quý ông? Ngày nay còn rất nhiều đàn ông cảm
+                        thấy ngại ngùng khi phải tỉa tót và sử dụng các sản phẩm
+                        làm đẹp tóc, và điều này làm tôi rất ngạc nhiên. Nếu bạn
+                        vẫn muốn mình trông như một cậu nhóc 16 tuổi thì không
+                        vấn đề gì. Nhưng nếu bạn muốn người khác tôn trọng mình,
+                        trước hết bạn phải biết giữ cho bản thân mình luôn đẹp
+                        và lịch sự. Cho dù bạn có đang làm trong ngành nghề gì
+                        thì “Cái răng cái tóc là góc con người”.
+                      </div>
+
+                      <div class="author-grid">
+                        <div class="author"><i> Ryserg Tung </i></div>
+
+                        <div class="profession">
+                          <i> Chuyên gia tạo mẫu tóc Hoa Kỳ </i>
+                        </div>
+                      </div>
+                      <div class="link-grid">
+                        <a
+                          href="mautoc.html"
+                          class="link-grid-item text-decoration-none text-uppercase"
+                          >chọn kiểu tóc</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner.jpg" />
+              <div class="container">
+                <div class="grid .row d-md-flex">
+                  <div class="col-md-6"></div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="grid-title .row">
+                      <h2 class="title">
+                        ĐÀN ÔNG TRƯỞNG THÀNH
+                        <br />
+                        CẦN MỘT MÁI TÓC ĐẸP
+                      </h2>
+
+                      <div class="text-grid">
+                        Bạn muốn được tôn trọng?
+                        <br />
+                        Hãy cắt một kiểu tóc thật nam tính. Quá là đơn giản phải
+                        không các quý ông? Ngày nay còn rất nhiều đàn ông cảm
+                        thấy ngại ngùng khi phải tỉa tót và sử dụng các sản phẩm
+                        làm đẹp tóc, và điều này làm tôi rất ngạc nhiên. Nếu bạn
+                        vẫn muốn mình trông như một cậu nhóc 16 tuổi thì không
+                        vấn đề gì. Nhưng nếu bạn muốn người khác tôn trọng mình,
+                        trước hết bạn phải biết giữ cho bản thân mình luôn đẹp
+                        và lịch sự. Cho dù bạn có đang làm trong ngành nghề gì
+                        thì “Cái răng cái tóc là góc con người”.
+                      </div>
+
+                      <div class="author-grid">
+                        <div class="author"><i> Ryserg Tung </i></div>
+
+                        <div class="profession">
+                          <i> Chuyên gia tạo mẫu tóc Hoa Kỳ </i>
+                        </div>
+                      </div>
+                      <div class="link-grid">
+                        <a
+                          href="mautoc.html"
+                          class="link-grid-item text-decoration-none text-uppercase"
+                          >chọn kiểu tóc</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner.jpg" />
+              <div class="container">
+                <div class="grid .row d-md-flex">
+                  <div class="col-md-6"></div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="grid-title .row">
+                      <h2 class="title">
+                        ĐÀN ÔNG TRƯỞNG THÀNH
+                        <br />
+                        CẦN MỘT MÁI TÓC ĐẸP
+                      </h2>
+
+                      <div class="text-grid">
+                        Bạn muốn được tôn trọng?
+                        <br />
+                        Hãy cắt một kiểu tóc thật nam tính. Quá là đơn giản phải
+                        không các quý ông? Ngày nay còn rất nhiều đàn ông cảm
+                        thấy ngại ngùng khi phải tỉa tót và sử dụng các sản phẩm
+                        làm đẹp tóc, và điều này làm tôi rất ngạc nhiên. Nếu bạn
+                        vẫn muốn mình trông như một cậu nhóc 16 tuổi thì không
+                        vấn đề gì. Nhưng nếu bạn muốn người khác tôn trọng mình,
+                        trước hết bạn phải biết giữ cho bản thân mình luôn đẹp
+                        và lịch sự. Cho dù bạn có đang làm trong ngành nghề gì
+                        thì “Cái răng cái tóc là góc con người”.
+                      </div>
+
+                      <div class="author-grid">
+                        <div class="author"><i> Ryserg Tung </i></div>
+
+                        <div class="profession">
+                          <i> Chuyên gia tạo mẫu tóc Hoa Kỳ </i>
+                        </div>
+                      </div>
+                      <div class="link-grid">
+                        <a
+                          href="cacmautocdep.html"
+                          class="link-grid-item text-decoration-none text-uppercase"
+                          >chọn kiểu tóc</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main id="main">
+      <section id="section-experience ">
+        <div class="container-fluid">
+          <div class="experience">
+            <div class="container .row d-md-flex text-center">
+              <div class="col-12 col-md-6">
+                <div class="about-us text-center">
+                  <h2 class="about-us-title">
+                    TRẢI NGHIỆM SALON ĐẲNG CẤP THẾ GIỚI
+                  </h2>
+
+                  <div class="about-us-content">
+                    Không chỉ là cắt tóc tạo kiểu, đến với Suplo sẽ là trải
+                    nghiệm chưa từng có tại bất kỳ đâu. Chỉ với 100k, bạn đã có
+                    thể sở hữu mái tóc của những ngôi sao hàng đầu David
+                    Beckham, Cristiano Ronaldo đồng thời được massage đầu, da
+                    mặt, dán lột mụn, quấn khăn nóng, cạo mặt - lấy ráy tai và
+                    vuốt sáp tạo kiểu. Suplo là nơi duy nhất tại Việt Nam cho
+                    bạn trải nghiệm thư giãn giải toả stress khi bước vào và đẹp
+                    trai toả sáng khi bước ra. Suplo hạnh phúc khi mỗi ngày đem
+                    đến cho phái mạnh toàn cầu sự tự tin tỏa sáng, sức khoẻ,
+                    niềm vui thư giãn; bằng những sản phẩm, dịch vụ chăm sóc sức
+                    khỏe, da mặt chuyên nghiệp - tạo kiểu tóc thời trang - gói
+                    gọn trong quy trình khoa học 30phút (không phải chờ đợi lâu)
+                    với giá thành rẻ nhất thế giới.
+                  </div>
+
+                  <div class="about-us-link">
+                    <a
+                      class="text-uppercase text-decoration-none"
+                      href="doinguchuyengia.html"
+                      >Xem thêm</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="about-us-img">
+                  <img src="./img/image_home_aboutus.png" alt="about us img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="countdown-day">
+        <div class="container-fluid">
+          <div class="countdown .row">
+            <h2 class="countdown-title .col-12">
+              Khuyến mãi khủng giảm đến 30% còn:
+            </h2>
+            <div class="list-item-countdown .col-12">
+              <div class="item-countdown">
+                <p>Ngày</p>
+                <span id="days">Ngày</span>
+              </div>
+
+              <div class="item-countdown">
+                <p>Giờ</p>
+                <span id="hours">Giờ</span>
+              </div>
+
+              <div class="item-countdown">
+                <p>Phút</p>
+                <span id="minutes">Phút</span>
+              </div>
+
+              <div class="item-countdown">
+                <p>Giây</p>
+                <span id="seconds">Giây</span>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <a
+                class="link-countdown text-uppercase text-decoration-none"
+                href="dat-lich.html"
+                >Đặt lịch ngay</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hair-style">
+        <div class="container-fluid">
+          <div class="container d-md-flex">
+            <div class="col-12 col-md-6">
+              <div class="hair-style text-center row">
+                <div class="col-12">
+                  <div class="hair-style-title">
+                    <h2 class="hair-title text-center">
+                      HƠN 150 KIỂU TÓC HOT NHẤT NĂM 2022
+                    </h2>
+
+                    <div class="hair-style-content">
+                      tBarber tự tin có thể giúp bạn có một mái tóc thật phong
+                      cách và cá tính. Từ những kiểu tóc nam cổ điển như Mop-top
+                      của The Beatles cho đến hiện đại như Undercut, Slickback,
+                      Pompadour của các ngôi sao bóng đá Beckham, Ronaldo…
+                      Stylist & Skinner của tBarber sẽ giúp bạn có ngay mái tóc
+                      mong muốn, hoặc tư vấn mái tóc phù hợp với phong cách,
+                      khuôn mặt và chất tóc phù hợp nhất nếu bạn cần.
+                    </div>
+                  </div>
+
+                  <div class="list-hair-style .row d-flex flex-wrap">
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-1.jpg" alt="item1" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-2.jpg" alt="item2" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-3.png" alt="item3" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-4.jpg" alt="item4" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-5.png" alt="item5" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-6.jpg" alt="item6" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-7.jpg" alt="item7" />
+                    </div>
+
+                    <div class="item-hair-style col-6 col-md-4">
+                      <img src="./img/item-hair-8.jpg" alt="item8" />
+                    </div>
+
+                    <div class="item-hair-style item-none col-6 col-md-4">
+                      <img src="./img/item-hair-9.jpg" alt="item9" />
+                    </div>
+                  </div>
+
+                  <div class="link-hair">
+                    <a href="cacmautocdep.html"
+                      >KHÁM PHÁ BỘ SƯU TẬP CỦA tBarber</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="service-price-img">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="./img/price-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/price-1.jpg" />
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services-overview">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="title-service-step text-center">
+              <h2 class="step">
+                8 BƯỚC CƠ BẢN ĐỂ TRỞ THÀNH QUÝ ÔNG LỊCH LÃM CÙNG tBarber
+              </h2>
+            </div>
+
+            <div class="content-service">
+              tBarber hạnh phúc khi mỗi ngày đem đến cho phái mạnh toàn cầu sự
+              tự tin tỏa sáng, sức khoẻ, niềm vui thư giãn; bằng những sản phẩm,
+              dịch vụ chăm sóc sức khỏe, da mặt chuyên nghiệp - tạo kiểu tóc
+              thời trang - gói gọn trong quy trình khoa học 30phút (không phải
+              chờ đợi lâu) với giá thành rẻ nhất thế giới.
+            </div>
+          </div>
+
+          <div id="wrapper .row">
+            <div class="list-service">
+              <div class="item-secvice">
+                <h2 class="title-service">
+                  <span>Bước 1:&nbsp</span>SẠCH NHỜN
+                </h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_1.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service"><span>Bước 2:&nbsp</span>MASSAGE</h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_2.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service">
+                  <span>Bước 3:&nbsp</span>TƯ VẤN KIỂU TÓC
+                </h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_3.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service">
+                  <span>Bước 4:&nbsp</span>CẮT TẠO KIỂU
+                </h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_4.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service">
+                  <span>Bước 5:&nbsp</span>ÊM ÁI - KỸ CÀNG
+                </h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_5.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service"><span>Bước 6:&nbsp</span>GỘI ĐẦU</h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_1.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service"><span>Bước 7:&nbsp</span>VUỐT SÁP</h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_5.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+              <div class="item-secvice">
+                <h2 class="title-service"><span>Bước 8:&nbsp</span>HÀI LÒNG</h2>
+
+                <div class="img-service">
+                  <img src="./img/service_step_bg_1.jpg" alt="buoc 1" />
+                </div>
+
+                <div class="content-sercive">
+                  20 năm để mãi 1 mái tóc, đã đến lúc lột xác. Đội ngũ 50
+                  Stylist chuyên nam đẳng cấp nhất VN tự tin sáng tạo kiểu tóc
+                  trên cả mong đợi cho bạn.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="link-hair-style text-center">
+              <a class="text-decoration-none" href="dich-vu.html"
+                >XEM TẤT CẢ DỊCH VỤ CỦA tBarber</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="footer-top">
+          <div class="container d-md-flex align-items-center">
+            <div class="col-12 col-md-3">
+              <div class="footer-logo text-center">
+                <img
+                  class="align-self-md-start"
+                  class=""
+                  src="./img/logopage.png"
+                  alt="logopage"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-9">
+              <div class="brand d-flex justify-content-between">
+                <div class="item-brand">
+                  <img src="./img/brand-1.jpg" alt="brand" />
+                </div>
+
+                <div class="item-brand">
+                  <img src="./img/brand-2.jpg" alt="brand" />
+                </div>
+
+                <div class="item-brand">
+                  <img src="./img/brand-3.jpg" alt="brand" />
+                </div>
+
+                <div class="item-brand">
+                  <img src="./img/brand-1.jpg" alt="brand" />
+                </div>
+
+                <div class="item-brand">
+                  <img src="./img/brand-2.jpg" alt="brand" />
+                </div>
+
+                <div class="item-brand">
+                  <img src="./img/brand-3.jpg" alt="brand" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="footer-bototm">
+          <div class="container d-sm-flex flex-sm-wrap d-md-flex">
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+              <div class="adress text-start">
+                <div class="col-12">
+                  <h3 class="title-h3">CHUỖI SALON TÓC NAM tBarber - Hà Nội</h3>
+                </div>
+                <div class="item-adress col-12">
+                  <span> <i class="fa-solid fa-location-dot"></i></span>
+                  379 Đội Cấn - Ba Đình
+                </div>
+
+                <div class="item-adress col-12">
+                  <span> <i class="fa-solid fa-location-dot"></i></span>
+                  18 Nguyễn Khánh Toàn - Cầu Giấy
+                </div>
+
+                <div class="item-adress col-12">
+                  <span> <i class="fa-solid fa-location-dot"></i></span>
+                  235 Hoàng Mai - Hoàn Kiếm
+                </div>
+
+                <div class="item-adress col-12">
+                  <span> <i class="fa-solid fa-location-dot"></i></span>
+                  235 Hàm Nghi - Từ Liêm
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+              <div class="payment">
+                <div class="col-12">
+                  <h3 class="title-h3">HÌNH THỨC THANH TOÁN ONLINE</h3>
+                </div>
+
+                <div class="list-item-payment col-12 d-flex">
+                  <div class="payment-item">
+                    <img src="./img/card-1.svg" alt="card" />
+                  </div>
+
+                  <div class="payment-item">
+                    <img src="./img/card-2.svg" alt="card" />
+                  </div>
+
+                  <div class="payment-item">
+                    <img src="./img/card-3.svg" alt="card" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="link-salon">
+                <div class="col-12">
+                  <h3 class="title-h3">LIÊN KẾT VỚI CHÚNG TÔI</h3>
+                </div>
+
+                <div class="col-12">
+                  <div class="wrapper">
+                    <ul class="list-social-media text-start">
+                      <li>
+                        <a href="#" class="facebook">
+                          <i class="fa-brands fa-facebook-f icon-top"></i>
+                          <i class="fa-brands fa-facebook-f icon-bot"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="twitter">
+                          <i class="fa-brands fa-twitter icon-top"></i>
+                          <i class="fa-brands fa-twitter icon-bot"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="youtube">
+                          <i class="fa-brands fa-youtube icon-top"></i>
+                          <i class="fa-brands fa-youtube icon-bot"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="instagram">
+                          <i class="fa-brands fa-instagram icon-top"></i>
+                          <i class="fa-brands fa-instagram icon-bot"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+              <div class="business-hours">
+                <h3 class="title-h3">GIỜ MỞ CỬA</h3>
+
+                <div class="business-hours-content col-10 col-lg-11">
+                  Từ 8:00 - 22:00 tất cả các ngày trong tuần (trừ ngày lễ, ngày
+                  Tết). Vui lòng đến sớm 15 phút trước thời gian đã đặt lịch.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+              <div class="fast-link">
+                <div class="col-12">
+                  <h3 class="title-h3">LIÊN KẾT NHANH</h3>
+                </div>
+
+                <div class="col-12">
+                  <ul class="list-link">
+                    <li>
+                      <a href="index.html"> Trang chủ</a>
+                    </li>
+
+                    <li>
+                      <a href="doinguchuyengia.html"> Đội ngũ chuyên gia</a>
+                    </li>
+
+                    <li>
+                      <a href="dich-vu.html"> Các dịch vụ</a>
+                    </li>
+
+                    <li>
+                      <a href="cacmautocdep.html">Các mẫu tóc đẹp</a>
+                    </li>
+
+                    <li>
+                      <a href="tin-tuc.html"> Tin tức</a>
+                    </li>
+
+                    <li>
+                      <a href="tuyen-dung.html"> Tuyển dụng</a>
+                    </li>
+
+                    <li>
+                      <a href="lien-he.html"> Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="icon-up">
+      <a class="icon-up" href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/main.js"></script>
+</html>
