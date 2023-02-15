@@ -1643,6 +1643,12 @@ ul {
   margin: 0 30px;
 }
 
+@media (max-width: 768px) {
+  .form-detail {
+    margin: 0px;
+  }
+}
+
 .title-form {
   font-weight: bold;
   margin-bottom: 40px;
