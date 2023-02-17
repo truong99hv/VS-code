@@ -246,7 +246,7 @@ form.addEventListener("submit", (e) => {
                     </tr>
 
                     <tr>
-                      <td class="text-start col-6">4. Ngày Đặt lịch</td>
+                      <td class="text-start col-6">4. Ngày đặt lịch</td>
                       <td class="text-start col-6">${dateInput.value}</td>
                     </tr>
 
